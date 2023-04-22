@@ -6,8 +6,8 @@ import mysql.connector
 import pandas as pd
 from mysql.connector import errorcode
 from flask_session import Session
-logging.basicConfig(filename='record.log',
-                level=logging.DEBUG, format='%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
+# logging.basicConfig(filename='record.log',
+#                 level=logging.DEBUG, format='%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 app = Flask(__name__)
 app.secret_key = '@dkjgfjgfhkj jxbjljv kjxgvljklkj'
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -16,10 +16,10 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 config = {
-    'host': 'cloudcomputing.mysql.database.azure.com',
-    'user': 'pavankumarpotta',
-    'password': 'Varunbike@1234',
-    'database': 'cloudcomputing',
+    'host': 'reshmithacloud.mysql.database.azure.com',
+    'user': 'reshmitha',
+    'password': 'ABCabc1@',
+    'database': 'reshmithacloud',
     'port': 3306,
     'connect_timeout': 50000
 }
